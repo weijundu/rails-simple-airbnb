@@ -1,0 +1,8 @@
+<div class="navbar-wagon">
+  <%= link_to "Simple Airbnb", flats_path, class: "home"%>
+  <form class = "form-inline" action = "/flats/search" method = "get">
+    <input type="search" placeholder="Search" name = "search" class = "form-control search">
+    <input type="submit" class = "btn btn-primary">
+  </form>
+  <%= link_to "Add Flat", new_flat_path, class: "btn btn-outline-primary" %>
+</div>

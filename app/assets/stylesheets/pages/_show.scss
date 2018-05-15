@@ -1,0 +1,74 @@
+.show-wrapper {
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.show-content {
+  width: 100%;
+  height: 60vh;
+  margin-top: -80px;
+  padding: 0px 100px;
+  opacity: 0.95;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-1 {
+  width: 60%;
+
+  margin-right: 30px;
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+.format {
+  padding: 10px 30px;
+  background-color: rgb(230, 230, 230);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.input-group{
+  margin-bottom: 10px;
+}
+
+.space {
+  margin-bottom: 30px;
+}
+
+.map {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
+}
+
+.content-2 {
+  width: 40%;
+
+}
+
+.button {
+  width: 100%;
+}
+
+.booking {
+  padding-bottom: 30px;
+}
+
+.icon {
+  display: flex;
+}
+
+.share {
+  display: flex;
+  padding-top: 15px;
+  p {
+    font-weight: bold;
+    flex-grow: 1;
+  }
+}

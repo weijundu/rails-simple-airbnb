@@ -1,0 +1,38 @@
+<div class="wrpper">
+<div class="container">
+<h1>Number of flats found (<%=@flats.count%>)</h1>
+  <div class="row">
+  <% @flats.each do |flat| %>
+    <div class="col-xs-12 col-md-4">
+
+
+      <div class="card">
+        <div class="image" style="background-image: url(<%=flat.url%>)" >
+        </div>
+        <div class="main-text">
+          <h3><%=flat.name%></h3>
+          <p><%=flat.address%></p>
+
+        </div>
+        <div class = "subtext">
+        <i class="fa fa-user a"></i>
+
+          <p><%=flat.number_of_guests%></p>
+          <i class="fa fa-eur a"></i>
+
+          <p><%=flat.price_per_night%></p>
+        </div>
+
+        <div class="link">
+          <%= link_to "More info", flat_path(flat)%>
+          <%= link_to "Edit", edit_flat_path(flat)%>
+          <%= link_to "Remove", flat_path(flat), method: :delete %>
+        </div>
+
+      </div>
+
+    </div>
+     <% end %>
+  </div>
+</div>
+</div>

@@ -1,0 +1,51 @@
+<div class="show-wrapper" style="background-image: url(<%=@flat.url%>)">
+</div>
+<div class="show-content">
+  <div class="content-1">
+    <div class="conent-left-upper format space">
+      <h2><%=@flat.name%></h2>
+      <p><%=@flat.address%></p>
+    </div>
+    <div class="conent-left-under-1 format">
+      <h3>A bit more about this flat...</h3>
+      <p><%=@flat.description%></p>
+      <div class="map" style="background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=<%=@flat.address%>&zoom=13&scale=1&size=300x300&maptype=roadmap&key=AIzaSyBSiMWYU0I8XUjwo9-gZGxNskGz4OJcQvk&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C<%=@flat.address%>')">
+      </div>
+    </div>
+  </div>
+
+  <div class="content-2">
+    <div class="booking format space">
+      <h3>Book this place!</h3>
+      <div class="input-group">
+        <span class="input-group-addon">From:</span>
+        <input class="form-control" id="email" name="email" type="text"/>
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon">To:</span>
+        <input class="form-control" id="email" name="email" type="text"/>
+      </div>
+      <input type="submit" name="" class = "btn btn-primary button">
+    </div>
+
+    <div class="details format space">
+      <h3>Details</h3>
+      <div class="icon">
+        <i class="fa fa-user a"></i>
+        <p><%=@flat.number_of_guests%></p>
+        <i class="fa fa-eur a"></i>
+        <p><%=@flat.price_per_night%></p>
+      </div>
+    </div>
+
+    <div class="share format">
+      <p>Share</p>
+      <div class="logo">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+</div>
